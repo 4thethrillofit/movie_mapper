@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MovieMapper</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap&#45;theme.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+
+    <div id='controls'>
+      <input type="text" class="typeahead" id="title" placeholder="Movie Title">
+      <input type="text" class="typeahead" id="director" placeholder="Director">
+      <input type="text" class="typeahead" id="release_year" placeholder="Release Year">
+      <!-- <button class='btn btn&#45;success'>Reset All Markers</button> -->
+      <div class="alert alert-info fade in">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+      </div>
+    </div>
+    <div id='map-canvas'></div>
+
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <script src="js/vendor/typeahead093.min.js"></script>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPLcj5wSASLOk2gvauOgu97szrqZCgy-Q&sensor=false">
+    </script>
+    <script src="js/bundle.min.js"></script>
+  </body>
+</html>

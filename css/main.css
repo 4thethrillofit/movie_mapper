@@ -1,0 +1,146 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map-canvas {
+  height: 100%;
+}
+
+div#controls {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  /* margin-left must be 50% of the overall div width! */
+  margin-left: -369px;
+  z-index: 5;
+  background-color: transparent;
+  padding: 5px;
+}
+
+div.alert-info {
+  display: none;
+  margin-top: 3px;
+  padding: 10px;
+}
+
+/* Typeahead Styling */
+/* style="margin: 0 auto;vertical-align: top; background-color: transparent;" */
+.typeahead,
+.tt-query,
+.tt-hint {
+  width: 240px;
+  height: 42px;
+  padding: 8px 12px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.typeahead {
+  background-color: #fff;
+}
+
+.typeahead:focus {
+  border: 2px solid #0097cf;
+}
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+  color: #999
+}
+
+.tt-dropdown-menu {
+  width: 240px;
+  margin-top: 12px;
+  padding: 5px 0 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.tt-header,
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tt-suggestion {
+  border-top: 1px solid #ccc;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.tt-header {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0097cf;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen
+and (max-width : 320px) {
+  div.alert-info {
+    font-size: 12px;
+    max-width: 150px;
+  }
+  div#controls {
+    top: -1px;
+    left: 50%;
+    /* margin-left must be 50% of the overall div width! */
+    margin-left: -105px;
+    padding: 5px;
+  }
+
+  .typeahead,
+  .tt-query,
+  .tt-hint {
+    width: 150px;
+    height: 35px;
+    padding: 8px 12px;
+    font-size: 12px;
+    border: 2px solid #ccc;
+    margin-bottom: 3px;
+    background-color: white;
+  }
+
+  .tt-dropdown-menu {
+    width: 150px;
+  }
+
+  .tt-header,
+  .tt-suggestion {
+    padding: 3px 20px;
+    font-size: 12px;
+  }
+}
+
+
+
+
