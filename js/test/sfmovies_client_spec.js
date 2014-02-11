@@ -34,9 +34,9 @@ describe("SFMoviesClient", function(){
         done();
       })
     })
-    it("an error message is attached to the locations attribute if it is missing", function(done){
+    it("the record will not be included in the result set if the locations attribute is missing", function(done){
       var title = "Days of Wine and Roses";
-      expect(client.filterBy('title', title)[0].errors).to.eq("LOCATIONS EMPTY");
+      expect(client.filterBy('title', title).length).to.eq(0);
       done();
     })
 
@@ -77,7 +77,7 @@ describe("SFMoviesClient", function(){
     describe("titles", function(){
       it("returns an array of all movie titles", function(done){
         var titles = client.collectAllAttributes('title');
-        expect(titles.length).to.eq(18);
+        expect(titles.length).to.eq(12);
         done();
       })
       it("returns an array of unique movie titles", function(done){
@@ -91,7 +91,7 @@ describe("SFMoviesClient", function(){
     describe("#getAllDirectors", function(){
       it("returns an array of all movie directors", function(done){
         var directors = client.collectAllAttributes('director');
-        expect(directors.length).to.eq(17);
+        expect(directors.length).to.eq(12);
         done();
       })
       it("returns an array of unique movie directors", function(done){
@@ -105,7 +105,7 @@ describe("SFMoviesClient", function(){
     describe("#getAllReleaseYears", function(){
       it("returns an array of all movie release years", function(done){
         var releaseYears = client.collectAllAttributes('release_year');
-        expect(releaseYears.length).to.eq(15);
+        expect(releaseYears.length).to.eq(10);
         done();
       })
       it("returns an array of unique movie release years", function(done){

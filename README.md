@@ -1,7 +1,8 @@
 App Overview
 ------------
 - Uses the [DataSF dataset](https://data.sfgov.org/Arts-Culture-and-Recreation-/Film-Locations-in-San-Francisco/yitu-d5am) on film locations in San Francisco as of 1/31/2014.
-- Purely frontend, with no server side interactions. It is hosted on GitHub pages at [SFMovies.github.io](www.sfmovies.github.io).
+- Purely frontend, with no server side interactions. 
+- Hosted on GitHub pages at [SFMovies.github.io](www.sfmovies.github.io).
 - Combines the SF films data with Google Maps API, which allows the user to see where the films were shot in SF.
 
 Design
